@@ -1,7 +1,7 @@
 # Lab Monitor
 ## View computers currently in use in the labs
 
-[Installing MEAN on Ubuntu 12.04](https://anthonycarbonaro.com)
+[Installing MEAN on Ubuntu 12.04](https://anthonycarbonaro.com/blog/installing-mean-stack)
 
 ^^ Use `https://github.com/Web-430/lab-monitor` instead of `https://github.com/linnovate/mean` when cloning the repo.
 
