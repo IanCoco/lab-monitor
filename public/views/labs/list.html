@@ -1,0 +1,9 @@
+<section data-ng-controller="LabsController" data-ng-init="find()">
+  <ul class="labs unstyled">
+    <li data-ng-repeat="lab in labs">
+      <span>{{lab.name}}</span>
+      <span>{{lab.room}}</span>
+    </li>
+  </ul>
+  <h1 data-ng-hide="!labs || labs.length">No labs yet. <br> Why don't you <a href="/#!/labs/create">Create One</a>?</h1>
+</section>

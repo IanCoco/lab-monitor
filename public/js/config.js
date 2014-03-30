@@ -24,6 +24,18 @@ angular.module('mean').config(['$stateProvider', '$urlRouterProvider',
         url: '/articles/:articleId',
         templateUrl: 'views/articles/view.html'
     })
+      .state('all labs', {
+        url: '/labs',
+        templateUrl: 'views/labs/list.html'
+    })
+      .state('create lab', {
+        url: '/labs/create',
+        templateUrl: 'views/labs/create.html'
+    })
+      .state('lab by name and room', {
+        url: '/labs/:labName/:labRoom',
+        templateUrl: 'views/labs/view.html'
+    })
       .state('home', {
         url: '/',
         templateUrl: 'views/index.html'

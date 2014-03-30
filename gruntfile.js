@@ -75,6 +75,12 @@ module.exports = function(grunt) {
                 logConcurrentOutput: true
             }
         },
+        mongodb_fixtures: {
+            options: {},
+            files: {
+                'dest/default_options': ['labs-test.json']
+            }
+        },
         mochaTest: {
             options: {
                 reporter: 'spec',
@@ -100,6 +106,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-mongodb-fixtures');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-nodemon');

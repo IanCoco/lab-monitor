@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-    db: 'mongodb://localhost/mean-test',
+    db: 'mongodb://localhost/lab-monitor-test',
     port: 3001,
     app: {
-        name: 'MEAN - A Modern Stack - Test'
+        name: 'Lab Monitor - Test'
     },
     facebook: {
         clientID: 'APP_ID',
