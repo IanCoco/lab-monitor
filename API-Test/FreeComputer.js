@@ -1,7 +1,7 @@
 var APICalls = function(){
 
 
-	var getAllLabs = function(temp){
+	var getAllLabs = function(res,temp){
 
 		var MakeLab = require('./Lab');
 		var MakeComputer = require('./Computer')
@@ -38,11 +38,11 @@ var APICalls = function(){
 				}
 				LabList.push(MakeLab.makeLab(MockLabData[i]._id,MockLabData[i].name, MockLabData[i].room, Computer,Software,Hardware,MockLabData[i].dimsx,MockLabData[i].dimsy));
 			}
-			temp(LabList);
+			temp(LabList,res);
 		});
 	}
 
-	var getFreeComputers = function(temp){
+	var getFreeComputers = function(res,temp){
 
 		var MakeLab = require('./Lab');
 		var MakeComputer = require('./Computer')
@@ -77,16 +77,16 @@ var APICalls = function(){
 				var Software = [];
 				for(var j = 0; j < MockLabData[i].software.length; j++)
 				{
-					Software[j].push(MockLabData[i].software[j]);
+					Software.push(MockLabData[i].software[j]);
 				}
-				LabList[i].push(MakeLab.makeLab(MockLabData[i]._id,MockLabData[i].name, MockLabData[i].room, Computer,Software,Hardware,MockLabData[i].dimsx,MockLabData[i].dimsy));
+				LabList.push(MakeLab.makeLab(MockLabData[i]._id,MockLabData[i].name, MockLabData[i].room, Computer,Software,Hardware,MockLabData[i].dimsx,MockLabData[i].dimsy));
 			}
-			temp(LabList);
+			temp(LabList,res);
 		});
 	}
 
 
-	var getSoftware = function (software,temp){
+	var getSoftware = function (res,software,temp){
 
 		var MakeLab = require('./Lab');
 		var MakeComputer = require('./Computer')
@@ -127,7 +127,7 @@ var APICalls = function(){
 
 				LabList.push(MakeLab.makeLab(MockLabData[i]._id,MockLabData[i].name, MockLabData[i].room, Computer,Software,Hardware,MockLabData[i].dimsx,MockLabData[i].dimsy));
 			}
-			temp(LabList);
+			temp(LabList,res);
 		});
 	}
 

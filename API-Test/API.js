@@ -1,6 +1,5 @@
 var GetDataStuff = require('./FreeComputer');
 
-
 function ReturnLabs(Labs)
 {
 	console.log(Labs);
@@ -33,3 +32,5 @@ function GetFreeComputers()
 {
 	GetDataStuff.getFreeComputers(ReturnSoftwareLabs);
 }
+
+GetFreeComputers();
