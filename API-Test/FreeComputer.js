@@ -98,12 +98,9 @@ var APICalls = function(){
 		var Database = db.get('LabCollection');
 
 		var LabList = [];
-		console.log(software);
-
 
 		Database.find({"software" : { $all: software}},{},function(e,docs){
 			MockLabData = docs;
-			console.log("uo");
 
 			for(var i = 0; i < MockLabData.length; i++)
 			{

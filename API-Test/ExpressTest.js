@@ -30,7 +30,7 @@ function ReturnFreeComputers(Labs,res)
 
 function GetAllLabs(res)
 {
-	GetDataStuff.getAllLabs(ReturnLabs,res);
+	GetDataStuff.getAllLabs(res,ReturnLabs);
 }
 
 function GetComputerBySoftware(res,Software)
@@ -43,6 +43,20 @@ function GetFreeComputers(res)
 	GetDataStuff.getFreeComputers(res,ReturnFreeComputers);
 }
 
-app.get('/', function(req,res){
+app.get('/AllLabs', function(req,res){
+	GetAllLabs(res);
+});
+
+app.get('/FreeComputers', function(req,res){
 	GetFreeComputers(res);
+});
+
+app.param('Software',function(req,res,next,tempSoftware){
+	console.log(tempSoftware);
+	req.data = tempSoftware.split(",");
+	next();
+});
+
+app.get('/GetSoftware/:Software', function(req,res){
+	GetComputerBySoftware(res,req.data);
 });
