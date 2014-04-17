@@ -1,12 +1,12 @@
 module.exports = { makeLab:function(Id,LabName, RoomNumber, Computers, Software,Hardware,X,Y){
 	var Lab ={};
-	Lab.Id = Id;
-	Lab.LabName = LabName;
-	Lab.RoomNumber = RoomNumber;
-	Lab.Computers = Computers;
-	Lab.Software = Software;
-	Lab.Hardware = Hardware;
-	Lab.DimensionX = X;
-	Lab.DimensionY = Y;
+	Lab.id = Id;
+	Lab.name = LabName;
+	Lab.room = RoomNumber;
+	Lab.computers = Computers;
+	Lab.software = Software;
+	Lab.hardware = Hardware;
+	Lab.dimsx = X;
+	Lab.dimsy = Y;
 	return Lab;
 }}
