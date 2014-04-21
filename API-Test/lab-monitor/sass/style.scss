@@ -1,0 +1,45 @@
+body{
+	margin:0px;
+}
+
+#lab{
+	float:left;
+	border:1px solid #000000;
+	.row{
+		.cell{
+			width:94px;
+			height:94px;
+			border:1px solid #000000;
+			margin:0px;
+			float:left;
+			.comp{
+				width:62px;
+				height:62px;
+				margin:16px;
+				border:1px solid #000;
+				.tooltip{
+					border:1px solid #000;
+					background:#F0F000;
+					padding:8px;
+					position:absolute;
+					margin-top:-1px;
+					margin-left:64px;
+					display:none;
+				}
+			}
+			.comp:hover{
+				.tooltip{
+					display:block;
+				}
+			}
+			.open{
+				@extend .comp;
+				background:#00FF00;
+			}
+			.closed{
+				@extend .comp;
+				background:#FF0000;
+			}
+		}
+	}
+}

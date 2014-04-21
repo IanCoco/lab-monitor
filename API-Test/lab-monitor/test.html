@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="labMonitor">
+    <div id="lab" ng-controller="DisplayLab">
+      <div class="row" ng-repeat="y in [] | range:lab['dims-y']" style="border: 1px solid #f00; float:left; clear: both;">
+        <div class="cell" ng-repeat="x in [] | range:lab['dims-x']" style="border: 1px solid #000; width: 100px; height: 100px; float: left;">
+          <span ng-repeat="computer in lab['computers']" ng-if="computer['position-x'] == x && computer['position-y'] == y" ng-click="toggleComputer(computer)">
+            {{ computer.status }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+<html>

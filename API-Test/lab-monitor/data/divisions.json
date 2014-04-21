@@ -1,0 +1,61 @@
+{
+  "divisions": [
+    {
+      "division": "BUS",
+      "software": [
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Microsoft PowerPoint",
+        "Microsoft Access"
+      ],
+      "hardware": [
+        "dual screens"
+      ]
+    },
+    {
+      "division": "CCM",
+      "software": [
+        "Microsoft Word",
+        "Microsoft PowerPoint",
+        "Maya",
+        "Photoshop",
+        "Blender"
+      ],
+      "hardware": [
+        "dual screens"
+      ]
+    },
+    {
+      "division": "EHS",
+      "software": [
+        "Microsoft Word",
+        "Microsoft PowerPoint"
+      ],
+      "hardware": [
+        "dual screens"
+      ]
+    },
+    {
+      "division": "ITS",
+      "software": [
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Microsoft PowerPoint",
+        "Microsoft Access",
+        "VisualStudio",
+        "XNA",
+        "Unity",
+        "WAMP",
+        "Git",
+        "Eclipse",
+        "MySQL Workbench",
+        "WireShark"
+      ],
+      "hardware": [
+        "dual screens",
+        "switches",
+        "routers"
+      ]
+    }
+  ]
+}

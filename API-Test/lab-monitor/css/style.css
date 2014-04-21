@@ -1,0 +1,47 @@
+/* line 1, ../sass/style.scss */
+body {
+  margin: 0px;
+}
+
+/* line 5, ../sass/style.scss */
+#lab {
+  float: left;
+  border: 1px solid #000000;
+}
+/* line 9, ../sass/style.scss */
+#lab .row .cell {
+  width: 94px;
+  height: 94px;
+  border: 1px solid #000000;
+  margin: 0px;
+  float: left;
+}
+/* line 15, ../sass/style.scss */
+#lab .row .cell .comp, #lab .row .cell .open, #lab .row .cell .closed {
+  width: 62px;
+  height: 62px;
+  margin: 16px;
+  border: 1px solid #000;
+}
+/* line 20, ../sass/style.scss */
+#lab .row .cell .comp .tooltip, #lab .row .cell .open .tooltip, #lab .row .cell .closed .tooltip {
+  border: 1px solid #000;
+  background: #F0F000;
+  padding: 8px;
+  position: absolute;
+  margin-top: -1px;
+  margin-left: 64px;
+  display: none;
+}
+/* line 31, ../sass/style.scss */
+#lab .row .cell .comp:hover .tooltip, #lab .row .cell .open:hover .tooltip, #lab .row .cell .closed:hover .tooltip {
+  display: block;
+}
+/* line 35, ../sass/style.scss */
+#lab .row .cell .open {
+  background: #00FF00;
+}
+/* line 39, ../sass/style.scss */
+#lab .row .cell .closed {
+  background: #FF0000;
+}

@@ -1,0 +1,65 @@
+{
+  "labs": [
+    {
+      "name": "Foster",
+      "room": "202",
+      "dims-x": "9",
+      "dims-y": "8",
+      "computers": [
+        {
+          "id": "1",
+          "status": "free",
+          "position-x": "1",
+          "position-y": "2"
+        },
+        {
+          "id": "2",
+          "status": "Reserved",
+          "position-x": "5",
+          "position-y": "2"
+        }
+      ],
+      "os": [
+        "mac"
+      ],
+      "software": [
+        "VisualStudios",
+        "XNA",
+        "Unity"
+      ],
+      "hardware": [
+        "dual screens"
+      ]
+    },
+    {
+      "name": "Foster",
+      "room": "200",
+      "computers": [
+        {
+          "id": "1",
+          "status": "broken",
+          "position-x": "2",
+          "position-y": "7"
+        },
+        {
+          "id": "2",
+          "status": "Free",
+          "position-x": "3",
+          "position-y": "5"
+        }
+      ],
+      "software": [
+        "Maya",
+        "Photoshop",
+        "Blender"
+      ],
+      "hardware": [
+        "dual screens"
+      ],
+      "division": [
+        "ITS",
+        "CCM"
+      ]
+    }
+  ]
+}
